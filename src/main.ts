@@ -6,6 +6,7 @@ function main() {
 
 
   db.tareas.insert(new Tarea(1, "Aprender JAVA"));
+  db.tareas.count();  
   db.tareas.insert(new Tarea(2, "Hacer un commit"));
 
   console.log(db.tareas.getAll());
