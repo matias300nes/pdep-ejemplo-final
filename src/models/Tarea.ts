@@ -1,6 +1,6 @@
 export class Tarea {
   constructor(
-    public id: number,
+    public id: string,
     public nombre: string,
     public completada: boolean = false
   ) {}

@@ -11,18 +11,18 @@ export class Store<T> {
   }
 
   private load(): void {
-    this.items = readFromFile<T>(this.name);
+    this.items = readFromFile<T>("data/" + this.name);
   }
 
   private save(): void {
-    writeToFile(this.name, this.items);
+    writeToFile("data/" + this.name, this.items);
   }
 
   getAll(): T[] {
     return this.items;
   }
 
-  getById(id: number): T | null {
+  getById(id: string): T | null {
     return this.items.find((item) => (item as any).id === id) || null;
   }
 
