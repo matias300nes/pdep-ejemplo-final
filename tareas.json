@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nombre": "Aprender TypeScript",
+    "completada": false
+  },
+  {
+    "id": 2,
+    "nombre": "Hacer un commit",
+    "completada": false
+  }
+]
