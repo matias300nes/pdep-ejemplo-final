@@ -5,7 +5,6 @@ function main() {
   const db = new Database();
 
 
-  db.tareas.insert(new Tarea(1, "Aprender TypeScript"));
   db.tareas.insert(new Tarea(2, "Hacer un commit"));
 
   console.log(db.tareas.getAll());
