@@ -31,7 +31,7 @@ export class Store<T> {
     this.save();
   }
 
-  update(id: number, updatedItem: Partial<T>): boolean {
+  update(id: string, updatedItem: Partial<T>): boolean {
     const index = this.items.findIndex((item) => (item as any).id === id);
 
     if (index !== -1) {
@@ -43,7 +43,7 @@ export class Store<T> {
     return false;
   }
 
-  delete(id: number): boolean {
+  delete(id: string): boolean {
     const initialLength = this.items.length;
     this.items = this.items.filter((item) => (item as any).id !== id);
 
